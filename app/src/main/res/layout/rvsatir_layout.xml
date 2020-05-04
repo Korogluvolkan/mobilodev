@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="#FFEB3B"
+    android:padding="6dip">
+
+    <ImageView
+        android:id="@+id/resim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <TextView
+        android:id="@+id/aciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/resim"
+        android:text="Açıklama"
+        android:textColor="#800000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/aciklama"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/resim"
+        android:gravity="center_vertical"
+        android:text="Başlık"
+        android:textColor="#800000"
+        android:textSize="16sp" />
+
+</RelativeLayout>
